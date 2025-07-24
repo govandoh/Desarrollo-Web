@@ -16,8 +16,7 @@ Algunas etiquetas utilizadas son:
 ** **
 **Enlace del sitio Web Publicado**
 
-*Link a Netlify:* 
-
+*Link a Netlify:* https://exercusionapata.netlify.app/
 ** **
 **Información del desarrolador**
 Carné: 9490-21-7
