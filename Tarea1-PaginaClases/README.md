@@ -12,8 +12,8 @@ Dentro de los cursos abarcamos consejos, modulos vistos durantes los cursos, y b
 
 ***
 **Participantes del Trabajo**
-1. Gerardo Antonio Ovando Hernandez - ***Carne***: 9490-21-7
-2. Walter Daniel Eliu Gomar Gonzales - ***Carné***: 9490-22-8616
+1. Gerardo Antonio Ovando Hernandez - ***Carné***: 9490-21-7
+2. Walter Daniel Eliú Gomar González - ***Carné***: 9490-22-8616
 
 
 
