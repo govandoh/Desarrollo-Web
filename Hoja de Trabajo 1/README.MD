@@ -26,7 +26,7 @@ Algunas etiquetas utilizadas son:
 ** **
 **Enlace del sitio Web Publicado**
 
-*Link a Netlify:* https://exercusionapata.netlify.app/
+*Link a Netlify:* https://estilizacionexcursiones.netlify.app/
 ** **
 **Información del desarrolador**
 Carné: 9490-21-7
