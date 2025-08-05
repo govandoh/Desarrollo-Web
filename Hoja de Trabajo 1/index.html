@@ -1,296 +1,270 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>A Pata por Guate</title>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A Pata por Guate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <table width="100%" height="500" background="src/portada-header.jpg">
-        <tr>
-            <td align="center" valign="middle">
-                <br><h1 style="font-size: 60px; color: white;">¡A Pata por Guate!</h1>
-            </td>
-        </tr>
-    </table>
 
-    <!--Header-->
-    <h1 style="font-size: 70px; text-align: center; margin-bottom: 0;">¡A pata por Guate!</h1>
-    <p style="font-size: 20px; text-align: center;">
-        ¡Bienvenido a tu rincón favorito para descubrir Guatemala de una forma auténtica!<br>
-        Aquí no solo viajas… <strong>¡vivís la experiencia chapina al máximo!</strong><br>
-        Prepárate para conocer paisajes únicos, convivir con gente increíble y liberar tu espíritu <strong>pata de chucho</strong> recorriendo los lugares más mágicos del país.
-    </p>
 
-    <hr style="border: 1px solid #00bcd4; width: 90%;">
-
-    <!--Descripcion-->
-    <h2 style="text-align: center;">¿Qué te ofrecemos?</h2>
-    <p style="font-size: 20px; text-align: center; max-width: 900px; margin: 0 auto;">
-        Organizamos excursiones completas: transporte cómodo, guías locales, itinerarios flexibles y actividades únicas.<br>
-        Ya sea que vengás solo, en grupo o en familia, nosotros te conectamos con la naturaleza, la cultura y la aventura. ¡Vos solo traé tu mochila y tus ganas de conocer Guate!
-    </p>
-    
-    <!-- Índice-->
-    <div align="start" style="margin-left: 50px;">
-        <h2 style="text-align: center;">¿Qué querés descubrir hoy?</h2>
-        <h2 style="text-align: left;">¡Descubrelo aquí!</h2>
-            <dl style="font-size: 20px; margin-inline-start: auto;">
-                <dt><a href="#destinos">Destinos</a></dt>
-                <dd><a href="#izabal">Izabal</a></dd>
-                <dd><a href="#peten">Petén</a></dd>
-                <dd><a href="#lago-atitlan">Lago de Atitlán</a></dd>
-                <dt><a href="#galeria">Galería de Destinos</a></dt>
-                <dt><a href="#itenerarios">Itinerarios por Destino</a></dt>
-                <dt><a href="#actividades">Lista de Actividades</a></dt>
-                <dt><a href="#footer">Contacto</a></dt>
-            </dl>
+  <header role="banner">
+    <div class="container">
+      <h1>Explora con Nosotros</h1>
+      <nav role="navigation" aria-label="Menú principal">
+        <ul>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#itinerarios">Itinerarios</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#footer">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Sección de destinos -->
-    <h2 id="destinos" style="text-align: center; color: #ff9800;">Nuestros Destinos</h2>
-    <h3 id="izabal" style="text-align: center; color: #00796b;">Izabal – Un viaje cristalino</h3>
-    <p style="font-size: 18px; text-align: center; max-width: 1920px;">
-        Desde el majestuoso Castillo de San Felipe hasta las aguas termales de Finca El Paraíso, Izabal es un destino que lo tiene todo: historia, naturaleza, ríos, mar Caribe y mucho calor humano. Ideal para quienes buscan aventura y descanso en un mismo lugar.
-    </p>
-    <div align="center">
-        <img src="src/izabal-castillo.jpeg" width="250" height="250" alt="Castillo de San Felipe">
-        <img src="src/izabal-paraiso.jpg" width="250" height="250" alt="Finca El Paraíso">
-    </div>
-    <hr style="border: 1px solid #00bcd4; width: 90%;">
-    <h3 id="peten" style="text-align: center; color: #6a1b9a;">Flores, Petén – Una aventura en la selva</h3>
-    <p style="font-size: 18px; text-align: center; max-width: 1920px;">
-        Explorá la selva maya, navegá el Lago Petén Itzá y maravíllate con Tikal, uno de los sitios arqueológicos más importantes del mundo. Petén es historia, selva, mística y una conexión profunda con nuestras raíces ancestrales.
-    </p>
-    <div align="center">
-        <img src="src/peten-tikal.jpg" width="250" height="250" alt="Templo en Tikal">
-        <img src="src/peten-lago.jpg" width="250" height="250" alt="Lago Petén Itzá">
-    </div>
+  <section class="hero">
+    <h1>¡A Pata por Guate!</h1>
+  </section>
 
-    <hr style="border: 1px solid #00bcd4; width: 90%;">
-    <h3 id="lago-atitlan" style="text-align: center; color: #0288d1;">Lago de Atitlán – Un paraíso natural</h3>
-    <p style="font-size: 18px; text-align: center; max-width: 1920px;">
-        Rodeado de volcanes y pueblos coloridos, Atitlán es un espejo de agua que enamora. Ideal para desconectar, hacer kayak, subir volcanes, visitar mercados, o simplemente disfrutar de un café con vista. Una joya de nuestra tierra que hay que vivirla, no solo verla.
-    </p>
-    <div align="center">
-        <img src="src/atitlan-lago.jpg" width="300" alt="Lago de Atitlán">
-        <img src="src/atitlan-calle.jpg" width="300" alt="Lago de Atitlán">
-    </div>
+  <main class="container intro">
+    <h2>¡Bienvenido a tu rincón favorito para descubrir Guatemala!</h2>
+    <p>¡Bienvenido a tu rincón favorito para descubrir Guatemala de una forma auténtica!<br>
+       Aquí no solo viajas… <strong>¡vivís la experiencia chapina al máximo!</strong><br>
+       Prepárate para conocer paisajes únicos, convivir con gente increíble y liberar tu espíritu <strong>pata de chucho</strong> recorriendo los lugares más mágicos del país.</p>
 
-    <div align="start">
-        <h2 id="galeria" style="text-align: center;  color: #60caaf;">Galería de Destinos</h2>
-        <p style="text-align: center; font-size: 18px;">Explorá nuestra galería de imágenes para ver más de estos destinos increíbles.</p>
-        <div style="display:-webkit-flex; justify-content:center; flex-wrap: wrap; gap: 20px;">
-            <img src="src/izabal-castillo.jpeg" width="250" height="250" alt="Castillo de San Felipe" title="Castillo de San Felipe" >
-            <img src="src/izabal-paraiso.jpg" width="250" height="250" alt="Finca El Paraíso" title="Finca El Paraíso">
-            <img src="src/peten-tikal.jpg" width="250" height="250" alt="Templo en Tikal" title="Templo Tikal" >
-            <img src="src/peten-lago.jpg" width="250" height="250" alt="Lago Petén Itzá" title="Lago Petén Itzá" >
-            <img src="src/peten-flores.jpg" width="250" height="250" alt="Flores Petén" title="Flores Petén">
-            <img src="src/peten-parque.jpg" width="250" height="250" alt="Parque Nacional Tikal" title="Parque Nacional Tikal">
-            <img src="src/atitlan-lago.jpg" width="250" height="250 alt="Lago de Atitlán" title="Lago de Atitlán">
-            <img src="src/atitlan-calle.jpg" width="250" height="250alt="Lago de Atitlán" title="San Marcos, Sololá">
-            <img src="src/lago-1.jpg" width="250" height="250 alt="Atitlán Lago 2" title="Atardecer en Atitlán">
-            <img src="src/atitlan-mirador.jpg" width="250" height="250 alt="Mirador" title="Mirador Atitlán">
-        </div>
-    </div>
-    <!--Tabla de Itinerarios-->
-    <div align="start">
-        <h2 id="itenerarios" style="text-align: center; color: #ff9800;">Itinerarios por Destino</h2>
-        <div align="start">
-            <p><strong>Petén - 3 días</strong></p>
-            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #dddddd8c;">
-                <thead style="background-color: #f2f2f2;">
-                <tr>
-                    <th style="border: 1px solid #dddddd; padding: 8px;">Día</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Hora</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Actividad</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Lugar</th>
-                </tr>
-            </thead>
+    <hr>
 
-            <tbody>
-                <tr>
-                    <td rowspan="7">Viernes</td>
-                    <td>05:00 AM</td>
-                    <td>Recogida de pasajeros</td>
-                    <td>Ciudad de Guatemala (Calzada Roosevelt)</td>
-                </tr>
-                <tr>
-                    <td>10:00 AM</td>
-                    <td>Llegada y descanso</td>
-                    <td>Flores</td>
-                </tr>
-                
-                <tr>
-                    <td>11:00 AM</td><td>Registro en hospedaje</td><td>Flores</td>
-                </tr>
-                <tr>
-                    <td>12:00 PM</td><td>Almuerzo típico</td><td>Restaurante local</td>
-                </tr>
-                <tr>
-                    <td>02:00 PM</td><td>Paseo en lancha</td><td>Lago Petén Itzá</td>
-                </tr>
-                <tr>
-                    <td>04:00 PM</td><td>Tarde libre</td><td>Centro de Flores</td>
-                </tr>
-                <tr>
-                    <td>07:00 PM</td><td>Cena grupal</td><td>Restaurante junto al lago</td>
-                </tr>
-                <tr><td colspan="4" style="border-bottom: 1.5px solid #ff9800;"></td></tr>
+    <!-- ¿Qué te ofrecemos? -->
+    <section class="ofrecemos">
+      <h2>¿Qué te ofrecemos?</h2>
+      <p>Organizamos excursiones completas: transporte cómodo, guías locales, itinerarios flexibles y actividades únicas.<br>
+         Ya sea que vengás solo, en grupo o en familia, nosotros te conectamos con la naturaleza, la cultura y la aventura. ¡Vos solo traé tu mochila y tus ganas de conocer Guate!</p>
+    </section>
 
-                <tr><td rowspan="6">Sábado</td><td>05:00 AM</td><td>Salida a Tikal</td><td>Parque Nacional Tikal</td></tr>
-                <tr><td>06:00 AM</td><td>Tour arqueológico</td><td>Tikal</td></tr>
-                <tr><td>12:00 PM</td><td>Almuerzo picnic</td><td>Área verde de Tikal</td></tr>
-                <tr><td>02:00 PM</td><td>Exploración libre</td><td>Tikal</td></tr>
-                <tr><td>05:00 PM</td><td>Regreso a Flores</td><td>Flores</td></tr>
-                <tr><td>07:00 PM</td><td>Cena libre</td><td>Flores</td></tr>
+    <!-- Índice -->
+    <section class="indice">
+      <h2>¿Qué querés descubrir hoy?</h2>
+      <dl>
+        <dt><a href="#destinos">Destinos</a></dt>
+          <dd><a href="#izabal">Izabal</a></dd>
+          <dd><a href="#peten">Petén</a></dd>
+          <dd><a href="#lago-atitlan">Lago de Atitlán</a></dd>
+        <dt><a href="#galeria">Galería de Destinos</a></dt>
+        <dt><a href="#itinerarios">Itinerarios por Destino</a></dt>
+        <dt><a href="#actividades">Lista de Actividades</a></dt>
+        <dt><a href="#footer">Contacto</a></dt>
+      </dl>
+    </section>
 
-                <tr><td colspan="4" style="border-bottom: 1.5px solid #ff9800;"></td></tr>
-                
-                <tr><td rowspan="4">Domingo</td><td>08:00 AM</td><td>Kayak o paddle board</td><td>Lago Petén Itzá</td></tr>
-                <tr><td>10:00 AM</td><td>Desayuno local</td><td>Café en el malecón</td></tr>
-                <tr><td>11:00 AM</td><td>Salida hacia Ciudad de Guatemala</td><td>Carretera CA-13</td></tr>
-                <tr><td>05:00 PM</td><td>Llegada estimada</td><td>Ciudad de Guatemala</td></tr>
-            </tbody>
-            </table>    
-        </div>
-        <div align="start">
-            <p><strong>Izabál - 2 días</strong></p>
-            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-                <thead style="background-color: #f2f2f2;">
-                <tr>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Día</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Hora</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Actividad</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Lugar</th>
-                </tr>
-            </thead>
-             <tbody>
-                <tr>
-                    <td rowspan="7">Sábado</td>
-                    <td>06:00 AM</td>
-                    <td>Recogida de pasajeros</td>
-                    <td>Ciudad de Guatemala (Calzada Roosevelt)</td>
-                </tr>
-                <tr><td>10:00 AM</td><td>Desayuno con vista al río</td><td>Río Dulce</td></tr>
-                <tr><td>11:00 AM</td><td>Lancha al castillo</td><td>Castillo de San Felipe</td></tr>
-                <tr><td>12:00 PM</td><td>Tour guiado</td><td>Interior del castillo</td></tr>
-                <tr><td>01:30 PM</td><td>Almuerzo</td><td>Restaurante sobre el río</td></tr>
-                <tr><td>03:00 PM</td><td>Visita a Finca El Paraíso</td><td>Aguas termales</td></tr>
-                <tr><td>06:00 PM</td><td>Registro en eco hotel</td><td>Zanja de El Paraíso</td></tr>
-                <tr><td colspan="4" style="border-bottom: 1.5px solid #ff9800;"></td></tr>
-                <tr>
-                    <td rowspan="6">Domingo</td>
-                    <td>08:00 AM</td>
-                    <td>Desayuno</td>
-                    <td>Hotel</td>
-                </tr>
-                <tr><td>09:00 AM</td><td>Senderismo</td><td>Área ecológica</td></tr>
-                <tr><td>12:00 PM</td><td>Nado libre</td><td>Río El Paraíso</td></tr>
-                <tr><td>02:00 PM</td><td>Regreso a Río Dulce</td><td>Lancha</td></tr>
-                <tr><td>03:00 PM</td><td>Visita al mercado flotante</td><td>Río Dulce</td></tr>
-                <tr><td>04:30 PM</td><td>Salida a Ciudad de Guatemala</td><td>Ruta al Atlántico</td></tr>
-            </tbody>
-        </table>    
-        </div>
+    <!-- Destinos -->
+    <section id="destinos">
+      <h2>Nuestros Destinos</h2>
 
-        <div align="start">
-            <p><strong>Atitlán - 2 días</strong></p>
-            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-                <thead style="background-color: #f2f2f2;">
-                <tr>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Día</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Hora</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Actividad</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Lugar</th>
+      <h3 id="izabal" class="destination-title izabal">Izabal – Un viaje cristalino</h3>
+      <p class="destination-text">Desde el majestuoso Castillo de San Felipe hasta las aguas termales de Finca El Paraíso, Izabal es un destino que lo tiene todo: historia, naturaleza, ríos, mar Caribe y mucho calor humano. Ideal para quienes buscan aventura y descanso en un mismo lugar.</p>
+      <div class="grid-images">
+        <img src="src/izabal-castillo.jpeg" alt="Castillo de San Felipe">
+        <img src="src/izabal-paraiso.jpg" alt="Finca El Paraíso">
+      </div>
 
-                    <tbody>
-                        <tr>
-                            <td rowspan="7">Sábado</td>
-                            <td>06:00 AM</td>
-                            <td>Recogida de pasajeros</td>
-                            <td>Ciudad de Guatemala (Calzada Roosevelt)</td>
-                        </tr>
-                        <tr><td>10:00 AM</td><td>Desayuno con vista al lago</td><td>Panajachel</td></tr>
-                        <tr><td>11:30 AM</td><td>Paseo en lancha a pueblos</td><td>San Juan y Santiago</td></tr>
-                        <tr><td>12:30 PM</td><td>Visita a talleres y murales</td><td>San Juan La Laguna</td></tr>
-                        <tr><td>01:30 PM</td><td>Almuerzo típico</td><td>Santiago Atitlán</td></tr>
-                        <tr><td>04:00 PM</td><td>Tarde libre</td><td>Panajachel</td></tr>
-                        <tr><td>07:00 PM</td><td>Cena grupal</td><td>Restaurante con vista</td></tr>
+      <h3 id="peten" class="destination-title peten">Flores, Petén – Una aventura en la selva</h3>
+      <p class="destination-text">Explorá la selva maya, navegá el Lago Petén Itzá y maravíllate con Tikal, uno de los sitios arqueológicos más importantes del mundo. Petén es historia, selva, mística y una conexión profunda con nuestras raíces ancestrales.</p>
+      <div class="grid-images">
+        <img src="src/peten-tikal.jpg" alt="Templo en Tikal">
+        <img src="src/peten-lago.jpg" alt="Lago Petén Itzá">
+      </div>
 
-                        <tr><td colspan="4" style="border-bottom: 1.5px solid #ff9800;"></td></tr>
+      <h3 id="lago-atitlan" class="destination-title atitlan">Lago de Atitlán – Un paraíso natural</h3>
+      <p class="destination-text">Rodeado de volcanes y pueblos coloridos, Atitlán es un espejo de agua que enamora. Ideal para desconectar, hacer kayak, subir volcanes, visitar mercados, o simplemente disfrutar de un café con vista. Una joya de nuestra tierra que hay que vivirla, no solo verla.</p>
+      <div class="grid-images">
+        <img src="src/atitlan-lago.jpg" alt="Lago de Atitlán">
+        <img src="src/atitlan-calle.jpg" alt="San Marcos, Sololá">
+      </div>
+    </section>
 
-                        <tr>
-                            <td rowspan="6">Domingo</td>
-                            <td>06:30 AM</td>
-                            <td>Subida opcional a mirador</td>
-                            <td>Cerro de Oro o Rostro Maya</td>
-                        </tr>
-                        <tr><td>10:00 AM</td><td>Desayuno energético</td><td>Panajachel</td></tr>
-                        <tr><td>11:30 AM</td><td>Paseo en kayak o paddle</td><td>Lago de Atitlán</td></tr>
-                        <tr><td>01:00 PM</td><td>Almuerzo libre</td><td>Panajachel</td></tr>
-                        <tr><td>02:00 PM</td><td>Compras y souvenirs</td><td>Mercado local</td></tr>
-                        <tr><td>03:30 PM</td><td>Salida a Ciudad de Guatemala</td><td>Ruta Interamericana</td></tr>
-                    </tbody>
-                </tr>
-                </thead>
-            </table>    
-        </div> 
-    </div>
-    <hr style="border: 1px solid #00bcd4; width: 90%;">
-    <!--Lista de actividades adicionales-->
-    <div align="start">
-        <h2 id="actividades" style="text-align: center; color: #ff9800;">Lista de Actividades adicionales</h2>
-        <p style="font-size: 18px; text-align: center; max-width: 1920px;">Además de los itinerarios, puedes realizar una variedad de actividades adicionales, además de las incluidas en los itinerarios</p>
+    <hr>
 
+    <!-- Galería -->
+    <section id="galeria">
+      <h2>Galería de Destinos</h2>
+      <p style="text-align:center; margin-bottom:1rem;">Explorá nuestra galería de imágenes para ver más de estos destinos increíbles.</p>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="src/izabal-castillo.jpeg" alt="Castillo de San Felipe, Izabal">
+          <figcaption>Castillo de San Felipe</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/izabal-paraiso.jpg" alt="Finca El Paraíso, Izabal">
+          <figcaption>Finca El Paraíso</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/peten-tikal.jpg" alt="Templo en Tikal, Petén">
+          <figcaption>Templo en Tikal</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/peten-lago.jpg" alt="Lago Petén Itzá, Petén">
+          <figcaption>Lago Petén Itzá</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/peten-flores.jpg" alt="Flores, Petén">
+          <figcaption>Isla de Flores</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/peten-parque.jpg" alt="Parque Nacional Tikal">
+          <figcaption>Parque Nacional Tikal</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/lago-1.jpg" alt="Atardecer en Atitlán">
+          <figcaption>Atardecer en Atitlán</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="src/atitlan-mirador.jpg" alt="Mirador de Atitlán">
+          <figcaption>Mirador Atitlán</figcaption>
+        </figure>
+      </div>
+    </section>
 
+    <hr>
 
-        <h4 style="text-align: left; color: #60caaf;">Petén</h4>
-        <ol>
-            <li>Tour nocturno en Tikal para ver el atardecer desde el Templo IV.</li>
-            <li>Avistamiento de aves tropicales y monos aulladores al amanecer.</li>
-            <li>Caminata ecológica por la Reserva Biotopo Cerro Cahuí.</li>
-            <li>Recorrido en bicicleta por la Isla de Flores y alrededores.</li>
-            <li>Visita cultural a la comunidad de San José y sus miradores.</li>
-            <li>Compras de artesanías en el malecón de Flores.</li>
-            <li>Cenas románticas junto al lago en restaurantes flotantes.</li>
-        </ol>
+    <!-- Itinerarios -->
+    <section id="itinerarios">
+      <h2>Itinerarios por Destino</h2>
 
-        <h4 style="text-align: left; color: #60caaf;">Izabál</h4>
-        <ol>
-            <li>Tour en lancha por el Río Dulce hasta Livingston.</li>
-            <li>Caminata en la selva hacia los Siete Altares (en temporada).</li>
-            <li>Degustación de gastronomía garífuna en Livingston.</li>
-            <li>Visita a la Laguna de Sepalau (ecoturismo).</li>
-            <li>Paseo en kayak al amanecer por el Lago de Izabal.</li>
-            <li>Visita a los manglares y observación de manatíes en Chocón Machacas.</li>
-            <li>Masajes relajantes en eco-hoteles con vista al río.</li>
-        </ol>
+      <!-- PETÉN 3 días -->
+      <p><strong>Petén – 3 días</strong></p>
+      <table class="itinerarios-table">
+        <thead>
+          <tr>
+            <th>Día</th><th>Hora</th><th>Actividad</th><th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="7">Viernes</td><td>05:00</td><td>Recogida de pasajeros</td><td>Ciudad de Guatemala</td></tr>
+          <tr><td>10:00</td><td>Llegada y descanso</td><td>Flores</td></tr>
+          <tr><td>11:00</td><td>Registro en hospedaje</td><td>Flores</td></tr>
+          <tr><td>12:00</td><td>Almuerzo típico</td><td>Restaurante local</td></tr>
+          <tr><td>14:00</td><td>Paseo en lancha</td><td>Lago Petén Itzá</td></tr>
+          <tr><td>16:00</td><td>Tarde libre</td><td>Centro de Flores</td></tr>
+          <tr><td>19:00</td><td>Cena grupal</td><td>Restaurante junto al lago</td></tr>
+          <tr class="separator"><td colspan="4"></td></tr>
 
-        <h4 style="text-align: left; color: #60caaf;">Atitlán</h4>
-        <ol>
-            <li>Talleres artesanales en San Juan: textiles, chocolate, tintes naturales.</li>
-            <li>Clase de yoga al amanecer con vista al lago.</li>
-            <li>Caminata al mirador Rostro Maya en Indian Nose.</li>
-            <li>Ceremonia maya tradicional con guía espiritual en Santiago Atitlán.</li>
-            <li>Paseo en kayak o paddle board por el lago.</li>
-            <li>Tour del café en San Pedro o Santa Clara La Laguna</li>
-            <li>Visita al mercado de Sololá y otros pueblos.</li>
-        </ol>   
-    </div>
+          <tr><td rowspan="6">Sábado</td><td>05:00</td><td>Salida a Tikal</td><td>Parque Nacional Tikal</td></tr>
+          <tr><td>06:00</td><td>Tour arqueológico</td><td>Tikal</td></tr>
+          <tr><td>12:00</td><td>Almuerzo picnic</td><td>Área verde de Tikal</td></tr>
+          <tr><td>14:00</td><td>Exploración libre</td><td>Tikal</td></tr>
+          <tr><td>17:00</td><td>Regreso a Flores</td><td>Flores</td></tr>
+          <tr><td>19:00</td><td>Cena libre</td><td>Flores</td></tr>
+          <tr class="separator"><td colspan="4"></td></tr>
 
-    
+          <tr><td rowspan="4">Domingo</td><td>08:00</td><td>Kayak o paddle board</td><td>Lago Petén Itzá</td></tr>
+          <tr><td>10:00</td><td>Desayuno local</td><td>Malecón</td></tr>
+          <tr><td>11:00</td><td>Salida a CA-13 hacia Ciudad de Guatemala</td><td>Ruta hacia Guatemala, Carretera CA-13</td></tr>
+          <tr><td>17:00</td><td>Llegada estimada</td><td>Ciudad de Guatemala</td></tr>
+        </tbody>
+      </table>
 
-    <!-- Footer -->
-    <hr style="margin-top: 50px; border: 1px solid lightgray;">
-    <footer id="footer" style="text-align: center; padding: 10px;">
-        <p>2025 A pata por Guate |Desarrollado por <strong>Gerardo Ovando</strong></p>
-    </footer>
+      <!-- IZABAL 2 días -->
+      <p><strong>Izabal – 2 días</strong></p>
+      <table class="itinerarios-table">
+        <thead>
+          <tr><th>Día</th><th>Hora</th><th>Actividad</th><th>Lugar</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="7">Sábado</td><td>06:00</td><td>Recogida de pasajeros</td><td>Guatemala</td></tr>
+          <tr><td>10:00</td><td>Desayuno al río</td><td>Río Dulce</td></tr>
+          <tr><td>11:00</td><td>Lancha al castillo</td><td>Castillo San Felipe</td></tr>
+          <tr><td>12:00</td><td>Tour guiado</td><td>Castillo</td></tr>
+          <tr><td>13:30</td><td>Almuerzo</td><td>Restaurante río</td></tr>
+          <tr><td>15:00</td><td>Visita Finca El Paraíso</td><td>Aguas termales</td></tr>
+          <tr><td>18:00</td><td>Registro eco hotel</td><td>La Zanja</td></tr>
+          <tr class="separator"><td colspan="4"></td></tr>
+
+          <tr><td rowspan="6">Domingo</td><td>08:00</td><td>Desayuno</td><td>Hotel</td></tr>
+          <tr><td>09:00</td><td>Senderismo</td><td>Área ecológica</td></tr>
+          <tr><td>12:00</td><td>Nado libre</td><td>Río El Paraíso</td></tr>
+          <tr><td>14:00</td><td>Regreso a Río Dulce</td><td>Lancha</td></tr>
+          <tr><td>15:00</td><td>Mercado flotante</td><td>Río Dulce</td></tr>
+          <tr><td>16:30</td><td>Salida a Guatemala</td><td>Ruta Atlántico</td></tr>
+        </tbody>
+      </table>
+
+      <!-- ATITLÁN 2 días -->
+      <p><strong>Atitlán – 2 días</strong></p>
+      <table class="itinerarios-table">
+        <thead>
+          <tr><th>Día</th><th>Hora</th><th>Actividad</th><th>Lugar</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="7">Sábado</td><td>06:00</td><td>Recogida</td><td>Guatemala</td></tr>
+          <tr><td>10:00</td><td>Desayuno vista lago</td><td>Panajachel</td></tr>
+          <tr><td>11:30</td><td>Lancha a pueblos</td><td>San Juan, Santiago</td></tr>
+          <tr><td>12:30</td><td>Talleres y murales</td><td>San Juan La Laguna</td></tr>
+          <tr><td>13:30</td><td>Almuerzo típico</td><td>Santiago Atitlán</td></tr>
+          <tr><td>16:00</td><td>Tarde libre</td><td>Panajachel</td></tr>
+          <tr><td>19:00</td><td>Cena grupal</td><td>Restaurante vista</td></tr>
+          <tr class="separator"><td colspan="4"></td></tr>
+
+          <tr><td rowspan="6">Domingo</td><td>06:30</td><td>Mirador opcional</td><td>Cerro de Oro</td></tr>
+          <tr><td>10:00</td><td>Desayuno energético</td><td>Panajachel</td></tr>
+          <tr><td>11:30</td><td>Kayak/paddle</td><td>Lago</td></tr>
+          <tr><td>13:00</td><td>Almuerzo libre</td><td>Panajachel</td></tr>
+          <tr><td>14:00</td><td>Compras y recuerdos</td><td>Mercado Sololá</td></tr>
+          <tr><td>15:30</td><td>Regreso a Guatemala</td><td>CA-1</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Actividades Adicionales -->
+    <section id="actividades" class="activities-list">
+      <h2>Lista de Actividades Adicionales</h2>
+      <p>Además de los itinerarios, puedes disfrutar de:</p>
+
+      <h4>Petén</h4>
+      <ol>
+        <li>Tour nocturno en Tikal para ver el atardecer desde el Templo IV.</li>
+        <li>Avistamiento de aves y monos al amanecer.</li>
+        <li>Caminata ecológica en Biotopo Cerro Cahuí.</li>
+        <li>Recorrido en bicicleta por Flores.</li>
+        <li>Visita cultural a la comunidad de San José.</li>
+        <li>Compras de artesanías en el malecón.</li>
+        <li>Cenas románticas en restaurantes flotantes.</li>
+      </ol>
+
+      <h4>Izabal</h4>
+      <ol>
+        <li>Lancha por Río Dulce hasta Livingston.</li>
+        <li>Caminata a los Siete Altares.</li>
+        <li>Gastronomía garífuna en Livingston.</li>
+        <li>Ecoturismo en Laguna de Sepalau.</li>
+        <li>Kayak al amanecer.</li>
+        <li>Avistamiento de manatíes.</li>
+        <li>Masajes relajantes con vista al río.</li>
+      </ol>
+
+      <h4>Atitlán</h4>
+      <ol>
+        <li>Talleres artesanales en San Juan: textiles y chocolate.</li>
+        <li>Clase de yoga al amanecer.</li>
+        <li>Caminata al mirador Indian Nose.</li>
+        <li>Ceremonia maya tradicional.</li>
+        <li>Kayak o paddle board.</li>
+        <li>Tour del café en San Pedro.</li>
+        <li>Visita al mercado de Sololá.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2025 A Pata por Guate | Desarrollado por <strong>Gerardo Ovando</strong></p>
+  </footer>
+
 </body>
 </html>
