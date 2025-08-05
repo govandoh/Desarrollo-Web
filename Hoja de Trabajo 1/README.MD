@@ -1,7 +1,7 @@
-**Hoja de Trabajo 1**
+**Hoja de Trabajo 1 - Con Estilización**
 ****
 ***Descripción del proyeccto***
-En la pagina Web, se realizó una pagina unicamente implementado y utilizando HTML, para representar crear una página de excursiones. 
+En la pagina Web, se realizó una pagina utilizando HTML y estilizandola con CSS, para representar crear una página de excursiones. 
 
 Se buscó emplear los conocimientos adquiridos durante las primeras clases y el conocimiento adquirido de las etiquetas vistas. 
 
