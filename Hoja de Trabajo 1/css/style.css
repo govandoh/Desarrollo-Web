@@ -1,0 +1,242 @@
+
+/* Variables globales */
+:root {
+  --primary: #00bcd4;
+  --secondary: #ff9800;
+  --accent: #60caaf;
+  --text: #333;
+  --bg: #fafafa;
+  --radius: 0.5rem;
+  --transition: 0.3s ease-in-out;
+}
+
+/* 2. reiniciar para todo modelo caja*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.5;
+}
+
+/* Contenedor  para banner */
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* 4. Header y navegación */
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+nav a:hover {
+  background: rgba(10, 228, 57, 0.644);
+}
+
+/* Sección de Imagen Grande */
+.hero {
+  background: url('../src/portada-header.jpg') center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Títulos de sección: ofrecemos, todos los titulos con h2 */
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Introducción y descripción */
+.intro p,.intro h2 {
+  text-align: center;
+}
+.intro p {
+  max-width: 900px;
+  margin: 0.5rem auto 2rem;
+  font-size: 1.125rem;
+}
+
+/* Ajustes del css para el índice (para los dl, dt y dd) */
+.indice {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.indice dt {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.indice dd {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Destinos  para titulos (configuracion global) (h3) */
+.destination-title {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+/* Destinos específicos por clase*/
+.destination-title.izabal { color: #00796b; }
+.destination-title.peten  { color: #6a1b9a; }
+.destination-title.atitlan{ color: #0288d1; }
+.destination-text {
+  max-width: 800px;
+  margin: 0.5rem auto 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Clases para cada item de imagen y clase de galeria general*/
+.grid-images, .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 3rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.grid-images > img, .gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform var(--transition);
+}
+
+.grid-images > img, .gallery-item img {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.grid-images > img:hover, .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* tamaño para texto de la galeria de fotos*/
+figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+/* Itinerarios */
+.itinerarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  text-align: left;
+}
+.itinerarios-table th,
+.itinerarios-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+.itinerarios-table th {
+  background: var(--primary);
+  color: #fff;
+}
+
+.itinerarios-table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+/* Separador naranja entre días */
+.itinerarios-table .separator td {
+  border: none;
+  border-bottom: 3px solid var(--secondary);
+  padding: 0;
+  background: transparent;
+}
+
+
+.activities-list {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+}
+.activities-list h4 {
+  color: var(--accent);
+  margin-top: 2rem;
+}
+.activities-list ol {
+  list-style: decimal inside;
+  margin-bottom: 1rem;
+}
+
+/* HR con estilo global */
+hr {
+  height: 2px;
+  background: var(--primary);
+  border: none;
+  margin: 2rem 0;
+}
+
+/* estilos basico para la etiqueta footer */
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.875rem;
+}
+
+/*Responsive */
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero h1 { font-size: 2.25rem; }
+  
+}
