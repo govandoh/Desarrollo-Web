@@ -14,6 +14,16 @@ Algunas etiquetas utilizadas son:
 - `img` para imagenes. 
 - `a` para enlaces.
 ** **
+
+***Funcionalidades implementadas***
+1. Se eliminó todo la estilización en línea. 
+2. Se remplazó la tabla que se usaba como banner, y se separó por utilizando la etiqueta:  `section`. 
+3. Se agrupó cada bloque de igual forma con la etiqueta `section`  para mejorar la estructura y entendimiento del html. 
+4. Se implementó modelo de caja, aplicación de variables, algunas transiciones y hover al momento de pasar sobre las imagenes. 
+5. Se ajustaron las imagenes con algunas propiedades de css, para que pudieran visualizarse de manera correcta. 
+6. Se ajustaron las tablas de itinerarios y se separaron y se estilizaron las filas y columnas para que se pudiera visualizar de mejor manera. 
+
+** **
 **Enlace del sitio Web Publicado**
 
 *Link a Netlify:* https://exercusionapata.netlify.app/
